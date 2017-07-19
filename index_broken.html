@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CDD, Inc.</title>
+    <link rel="icon" href="img/logo_icon.svg">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+
+</head>
+<body>
+<div class="mdc-layout-grid">
+    <div class="cdd-content">
+        <header class="mdc-toolbar mdc-toolbar--fixed">
+            <div class="container">
+                <div class="mdc-toolbar__row cdd-header">
+                    <section class="small-screen-only mdc-toolbar__section mdc-toolbar__section--align-start">
+                        <div role="button" href="javascript:void(0)"
+                             class="medium-screen-only demo-menu material-icons mdc-toolbar__icon--menu">menu
+                        </div>
+                    </section>
+                    <section class="small-screen-only mdc-toolbar__section mdc-toolbar__section--align-center">
+                        <span class="cdd-title mdc-toolbar__title">CDD, Inc.</span>
+                    </section>
+                    <section class="large-screen-only mdc-toolbar__section mdc-toolbar__section--align-start">
+                        <img class="header-logo" src="img/smaller_logo.png" alt="CDD Logo">
+                    </section>
+                    <section class="large-screen-only mdc-toolbar__section mdc-toolbar__section--align-end">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li class="main-menu__submenu">
+                                <a href="javascript:void(0);">Nosotros</a>
+                                <div class="main-menu__submenu-content">
+                                    <a href="nosotros/historia.html">Historia</a>
+                                    <a href="nosotros/historia.html">Mision</a>
+                                    <a href="nosotros/historia.html">Vision</a>
+                                    <a href="nosotros/valores.html">Valores</a>
+                                </div>
+                            </li>
+                            <li class="main-menu__submenu">
+                                <a href="javascript:void(0);">Servicios</a>
+                                <div class="main-menu__submenu-content">
+                                    <a href="servicios/microcreditos.html">Microcreditos</a>
+                                    <a href="servicios/solicitud.html">Solicitud de credito</a>
+                                </div>
+                            </li>
+                            <li class="main-menu__submenu">
+                                <a href="javascript:void(0);">Institucional</a>
+                                <div class="main-menu__submenu-content">
+                                    <a href="institucional/directores.html">Consejo de Directores</a>
+                                    <a href="institucional/gerencial.html">Staff Gerencial</a>
+                                    <a href="institucional/memorias.html">Memorias anuales</a>
+                                    <a href="institucional/relaciones.html">Relaciones</a>
+                                    <a href="institucional/reconocimientos.html">Reconocimientos</a>
+                                    <a href="institucional/trabajos.html">Trabaja con nosotros</a>
+                                </div>
+                            </li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="assets/slider_img/join-us.png" alt="First slide">
+                    <div class="carousel-caption">
+                        <h1>Ganadores</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida
+                            at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">¡Conocelos!</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide d-block img-fluid" src="assets/slider_img/the-office.jpg"
+                         alt="Second slide">
+                    <div>
+                        <div class="carousel-caption">
+                            <h1>Nuevo Servicio</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer más</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide d-block img-fluid" src="http://placehold.it/1200x600" alt="Third slide">
+                    <div>
+                        <div class="carousel-caption">
+                            <h1>¡25 Años de Compromiso!</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">¡Descubre más'</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="container cdd-container">
+
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <a style="text-decoration: none;" href="servicios/microcreditos.html">
+                        <img class="rounded-circle rounded-circle-frame" src="img/creditos_circle.jpg"
+                             alt="Generic placeholder image" width="200" height="200">
+                        <div class="spacer-10px"></div>
+                        <h2>Crédito</h2>
+                    </a>
+                    <div class="spacer-10px"></div>
+                    <p>Si quieres obtener un crédito para hacer crecer tu negocio o realizar tu sueño de una vivienda te
+                        ofrecemos los siguientes productos de microcrédito.</p>
+
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img class="rounded-circle rounded-circle-frame" src="img/capacitacion_circle.jpg"
+                         alt="Generic placeholder image" width="200" height="200">
+                    <div class="spacer-10px"></div>
+                    <h2>Capacitación Clientes</h2>
+                    <div class="spacer-10px"></div>
+                    <p>En seguimiento al eje de Formación y Cualificación Empresarial, para contribuir al
+                        fortalecimiento de
+                        los
+                        negocios de nuestros clientes, se realizan talleres, encuentros y espacios educativos para
+                        aportar
+                        herramientas necesarias para el buen funcionamiento de las microempresas.</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img class="rounded-circle rounded-circle-frame" src="img/trans_fin.png"
+                         alt="Generic placeholder image"
+                         width="200" height="200">
+                    <div class="spacer-10px"></div>
+                    <h2>Transparencia Financiera</h2>
+                    <div class="spacer-10px"></div>
+                    <p>Nueva vez el CDD recibió el Certificado de Transparencia 2015, otorgado por REDCAMIF y el Mix
+                        Market
+                        por su compromiso con la transparencia financiera, alcanzando 4 diamantes.</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <img class="rounded-circle rounded-circle-frame" src="img/responsabilidad_circle.jpg"
+                         alt="Generic placeholder image" width="200" height="200">
+                    <div class="spacer-10px"></div>
+                    <h2>Responsabilidad Social</h2>
+                    <div class="spacer-10px"></div>
+                    <p>Este programa integra la capacitación con enlaces comunitarios impartiendo charlas, talleres y
+                        otras actividades sobre Genero, Prevención Violencia, y VHI/SIDA.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Conoce los ganadores del concurso <span
+                            class="text-muted">CITI</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto"
+                         src="http://placehold.it/500x500?text=Imagen(500x500)"
+                         alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 push-md-5">
+                    <h2 class="featurette-heading">Taller Educación Financiera para <span class="text-muted"> Microempresarios.</span>
+                    </h2>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <div class="col-md-5 pull-md-7">
+                    <img class="featurette-image img-fluid mx-auto"
+                         src="http://placehold.it/500x500?text=Imagen(500x500)"
+                         alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="row footer">
+                <div class="address col-sm-12">
+                    <h3>DIRECCION</h3>
+                    <p><strong>Centro Comercial Isabel Aguiar</strong><br>
+                        Ave. Isabel Aguiar, Edif. B-2, Local B-3, 3er Nivel<br>
+                        Herrera, Santo Domingo Oeste<br>
+                        República Dominicana<br>
+                        Telefono: +1(809)560-3191, ext.: 29<br>
+                        Email: info@cdd.org.do</p>
+                </div>
+                <div class="social-banner-group">
+                    <a href="#">
+                        <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="copyright col-sm-12">
+                    <ul>
+                        <li>
+                            <a href="#">Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminos</a></p>
+                        </li>
+                    </ul>
+
+                    <p>&copy; 2017 Centro Dominicano de Desarrollo, Inc.</p>
+                </div>
+            </footer>
+
+        </div><!-- /.container -->
+    </div><!-- cdd-content -->
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

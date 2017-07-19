@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: gray;
+}
+.fixed-toolbar {
+    position: fixed;
+}
+
+@media (max-width: 991px) {
+    .toolbar {
+        height: 50px;
+    }
+}
