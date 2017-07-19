@@ -76,12 +76,12 @@ a:hover {
   height: 56px;
   width: 56px;
 }
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
   .floating-button.rounded-circle {
     top: 50px;
   }
 }
-@media (max-width: 990px){
+@media (max-width: 1025px){
   .main-logo {
     height: 20px;
     width: 250px;
@@ -102,7 +102,7 @@ a:hover {
   margin-top: 1.7rem;
   margin-bottom: 4rem;
 }
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
   .carousel {
     margin-top: 0.45rem;
   }
@@ -189,7 +189,7 @@ a:hover {
   background-size: 6px 6px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
   .img-small-screen {
     display: block;
   }
@@ -197,7 +197,7 @@ a:hover {
     display: none;
   }
 }
-@media (min-width: 990px) {
+@media (min-width: 1025px) {
   .img-large-screen {
     display: block;
   }
