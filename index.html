@@ -1,185 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
+    <meta name="author" content="Intelycs Technologies">
+    <meta name="generator" content="MintWeb 0.0.1" />
+    <link href="/img/branding/cdd_lodp.png" rel="shortcut icon">
     <title>Centro Dominicano de Desarrollo, Inc.</title>
-
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link href="css/aos.css" rel="stylesheet">
+
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md fixed-top" style="background-color: white;">
+<nav class="navbar navbar-toggleable-md fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
             aria-label="Toggle navigation">
         <span class="material-icon"><i class="fa fa-bars" aria-hidden="true"></i> </span>
     </button>
-    <a class="navbar-brand" href="#">
-        <img class="main-logo" src="img/smaller_logo.png">
+    <a class="navbar-brand" href="index.html">
+        <img class="main-logo" src="img/branding/centered_logo2.png">
     </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto main-menu">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item main-menu__submenu">
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="#">Nosotros <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="main-menu__submenu-content">
                     <li>
                         <a href="nosotros/historia.html">Historia</a>
                     </li>
                     <li>
-                        <a href="nosotros/mision.html">Mision, vision, y valores</a>
+                        <a href="nosotros/mision.html">Misión, visión, y valores</a>
+                    </li>
+                    <li>
+                        <a href="nosotros/responsabilidad.html">Responsabilidad</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item main-menu__submenu">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="javascript:void(0);">
+                    Servicios <i class="fa fa-angle-down fa-1x"></i>
+                </a>
                 <ul class="main-menu__submenu-content">
                     <li>
-                        <a href="servicios/microcreditos.html">Microcreditos</a>
+                        <a href="servicios/microcreditos.html">Microcréditos</a>
                     </li>
                     <li>
-                        <a href="servicios/solicitud.html">Solicitud de Credito</a>
+                        <a href="servicios/solicitud.html">Solicitud de crédito</a>
                     </li>
+
                 </ul>
             </li>
             <li class="nav-item main-menu__submenu">
-                <a class="nav-link" href="#">Institucional</a>
+                <a class="nav-link" href="javascript:void(0);">
+                    Institucional <i class="fa fa-angle-down fa-1x"></i>
+                </a>
                 <ul class="main-menu__submenu-content">
+
                     <li>
                         <a href="institucional/directores.html">Consejo de Directores</a>
                     </li>
+
+
                     <li>
                         <a href="institucional/gerencial.html">Staff Gerencial</a>
                     </li>
+
+
                     <li>
                         <a href="institucional/memorias.html">Memorias anuales</a>
                     </li>
+
+
                     <li>
-                        <a href="institucional/relaciones.html">Relaciones</a>
+                        <a href="institucional/relaciones.html"> Relaciones</a>
                     </li>
+
+
                     <li>
                         <a href="institucional/reconocimientos.html">Reconocimientos</a>
                     </li>
+
+                    <li>
+                        <a href="institucional/premios.html">Premios</a>
+                    </li>
+
                     <li>
                         <a href="institucional/trabajos.html">Trabaja con Nosotros</a>
                     </li>
+
                 </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
+            <li class=" login-button">
+                <a class="nav-link" href="app/login.html">Acceso Clientes
+                    <i class="fa fa-lock fa-1x"></i></a>
+            </li>
         </ul>
     </div>
 </nav>
+<div id="login-window" class="login-window-modal">
+    <div class="login-window-content">
 
-<div id="cdd-slider" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#cdd-slider" data-slide-to="0" class="active"></li>
-        <li data-target="#cdd-slider" data-slide-to="1"></li>
-        <li data-target="#cdd-slider" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <img class="first-slide img-fluid img-large-screen" src="img/25_years_large_screens.png" alt="25 Aniversario">
-            <img class="first-slide img-fluid img-small-screen" src="img/25_years_small_screens.png"
-                 alt="25 Aniversario">
-            <div class="container">
-                <div class="carousel-caption d-none d-md-block text-right">
-                    <h1>¡25 Años Comprometidos!</h1>
-                    <p>
-                        Mejorando las condiciones y calidad de vida de las<br>
-                        familias dominicanas.
-                    </p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer más...</a></p>
-
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="second-slide img-fluid img-large-screen" src="img/subagentes_large_screens.png"
-                 alt="Nuevo Servicio de Subagentes Banreservas">
-            <img class="second-slide img-fluid img-small-screen" src="img/subagentes_small_screens.png"
-                 alt="Nuevo Servicio de Subagentes Banreservas">
-            <div class="container">
-                <div class="carousel-caption d-none d-md-block text-right">
-                    <h1>¡Sub-agentes Banreservas!</h1>
-                    <p>
-                        CERCA es la red de subagentesbancarios de Banreservas<br> donde
-                        puedes realizar transacciones de forma rápida.
-                    </p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer más...</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="third-slide"
-                 src="img/santo_domingo.jpg"
-                 alt="Third slide">
-            <div class="container">
-                <div class="carousel-caption d-none d-md-block text-right caption-text-color">
-                    <h1>¡Nuevo Servicio!</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                </div>
-            </div>
-        </div>
     </div>
-    <a class="carousel-control-prev" href="#cdd-slider" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#cdd-slider" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-    </a>
 </div>
-
-<div class="container cdd">
-    <div class="row">
-        <div class="col-lg-3">
-            <a href="#">
-                <img class="rounded-circle" src="img/test_circle_img.png" alt="Generic placeholder image">
+<!-- SLIDER SECTION -->
+<ul class="slick-slider">
+    <li class="slide-container">
+        <img class="slide-image" src="img/slider/slide_1.jpg" alt="25 Years"/>
+        <div class="slide-content slide-main">
+            <h1>¡25 años de compromiso!</h1>
+            <p>Continuamos apegados a nuestros principios
+                y a los que nos dió razón de ser <i>"Mejorar las
+                condiciones y calidad de vida de la población
+                de bajos ingresos, mediante servicios financieros
+                y no financieros con enfoque de género, priorizando
+                    la micro y pequeña empresa"</i>.
+            </p>
+        </div>
+    </li>
+    <li class="slide-container">
+        <img class="slide-image" src="img/slider/slide_2.jpg" alt="25 Years"/>
+        <div class="slide-content slide-second">
+            <h1>¡Sub-agentes Banreservas!</h1>
+            <p>
+                CERCA es la red de subagentesbancarios de Banreservas<br> donde
+                puedes realizar transacciones de forma rápida.
+            </p>
+        </div>
+    </li>
+    <li class="slide-container">
+        <img class="slide-image" src="img/slider/slide_3.jpg" alt="25 Years"/>
+        <div class="slide-content slide-solicitud">
+            <a class="btn btn-lg btn-primary" href="servicios/solicitud.html" role="button">Solicitar</a>
+            <h1>¡Solicita tu prestamo ya!</h1>
+            <p>Sueña en grande y cuenta con nosotros para tus proyectos.</p>
+        </div>
+    </li>
+    <li class="slide-container">
+        <img class="slide-image" src="img/slider/slide_4.jpg" alt="25 Years"/>
+        <div class="slide-content">
+            <h1>¡Solicita tu prestamo ya!</h1>
+            <p>Sueña en grande y cuenta con nosotros para tus proyectos.</p>
+        </div>
+    </li>
+    <li class="slide-container">
+        <img class="slide-image" src="img/slider/slide_5.jpg" alt="25 Years"/>
+        <div class="slide-content">
+            <h1>¡Ganadores del premios CITI 2016!</h1>
+            <a class="btn btn-lg btn-primary" href="institucional/premios.html" role="button">Leer más...</a>
+        </div>
+    </li>
+</ul>
+<!-- END SLIDER -->
+<div class="container">
+    <div class="row text-center">
+        <div data-aos="fade-up" data-aos-delay="100" class="col-lg-3">
+            <a class="h2" href="servicios/microcreditos.html">
+                <img class="rounded-circle scaleUp circle-borders" src="img/creditos_circle.jpg"
+                     alt="Generic placeholder image">
                 <div class="spacer-20px"></div>
-                <h2>Crédito</h2>
+                Crédito
             </a>
+            <hr>
             <p>
                 Si quieres obtener un crédito para hacer crecer tu negocio o realizar tu sueño de una vivienda te
                 ofrecemos los siguientes productos de microcrédito.
             </p>
         </div>
-        <div class="col-lg-3">
-            <img class="rounded-circle" src="img/capacitacion_circle.png" alt="Generic placeholder image">
-            <div class="spacer-20px"></div>
-            <h2>Capacitación Clientes</h2>
+        <div data-aos="fade-up" data-aos-delay="200" class="col-lg-3">
+            <a class="h2" href="#">
+                <img class="rounded-circle scaleUp circle-borders" src="img/capacitacion_circle.jpg"
+                     alt="Generic placeholder image">
+                <div class="spacer-20px"></div>
+                Capacitación Clientes
+            </a>
+            <hr>
             <p>En seguimiento al eje de Formación y Cualificación Empresarial, para contribuir al
-                fortalecimiento de
-                los
-                negocios de nuestros clientes, se realizan talleres, encuentros y espacios educativos para
-                aportar
-                herramientas necesarias para el buen funcionamiento de las microempresas.</p>
+                fortalecimiento de los negocios de nuestros clientes, se realizan talleres
+                y encuentros.</p>
         </div>
-        <div class="col-lg-3">
-            <img class="rounded-circle" src="img/financial_transparency.png" alt="Transparencia Financiera">
-            <div class="spacer-20px"></div>
-            <h2>Transparencia Financiera</h2>
-            <p>Nueva vez el CDD recibió el Certificado de Transparencia 2015, otorgado por REDCAMIF y el Mix
+        <div data-aos="fade-up" data-aos-delay="300" class="col-lg-3 ">
+            <a class="h2" href="institucional/reconocimientos.html">
+                <img class="rounded-circle scaleUp circle-borders" src="img/financial_transparency.png"
+                     alt="Transparencia Financiera">
+                Transparencia Financiera
+            </a>
+            <hr>
+            <p>Nueva vez el CDD recibió el Certificado de Transparencia otorgado por REDCAMIF y el Mix
                 Market
                 por su compromiso con la transparencia financiera, alcanzando 4 diamantes.</p>
 
         </div>
-        <div class="col-lg-3">
-            <img class="rounded-circle" src="img/responsabilidad_social.png" alt="Responsabilidad Social">
-            <div class="spacer-20px"></div>
-            <h2>Responsabilidad Social</h2>
+        <div data-aos="fade-up" data-aos-delay="400" class="col-lg-3">
+            <a class="h2" href="#">
+                <img class="rounded-circle scaleUp circle-borders" src="img/social_resp.jpg"
+                     alt="Responsabilidad Social">
+                Responsabilidad Social
+            </a>
+            <hr>
             <p>
                 Este programa integra la capacitación con enlaces
                 comunitarios impartiendo charlas, talleres y
@@ -188,79 +220,117 @@
             </p>
         </div>
     </div>
+    <hr class="section-divider">
+    <section class="section" style="padding-bottom: 20px">
+        <div class="row highlights">
+            <div data-aos="fade-right" data-aos-delay="200" class="col-md-7 text-center">
+                <h1 class="highlights-heading">Conoce más de cerca a nuestros <span
+                        class="text-highlight">clientes.</span></h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Ver más...</a></p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="200" class="col-md-5 flex-row">
+                <iframe class="highlights-box-shadow" width="100%" height="300"
+                        src="https://www.youtube.com/embed/qpEtOeXMxvI" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
     <hr class="section-divider">
 
-    <div class="row highlights">
-        <div class="col-md-7 text-center">
-            <h2 class="highlights-heading">Conoce más de cerca a nuestros <span class="text-muted">clientes.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-                commodo.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Ver más...</a></p>
+    <section class="section" style="padding-bottom: 20px">
+        <div class="row highlights">
+            <div data-aos="fade-left" data-aos-delay="200" class="col-md-7 push-md-5 text-center">
+                <h1 class="highlights-heading">Taller de educación financiera para <span class="text-highlight">Microempresarios.</span>
+                </h1>
+                <a class="btn btn-lg btn-primary" href="#" role="button">Saber más...</a></p>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="200" class="col-md-5 pull-md-7">
+                <img width="445" height="300" class="highlights-box-shadow mx-auto" src="img/talleres_img.jpg"
+                     alt="Taller de educacion financiera">
+            </div>
         </div>
-        <div class="col-md-5 flex-row">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/CrM3Tn4EA5U" frameborder="0" allowfullscreen></iframe>
-
+    </section>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 footer-section">
+                <h5>dirección</h5>
+                <ul>
+                    <li>
+                        <div class="flex-container">
+                            <div class="flex-item-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="">
+                                <p style="padding-left: 6px" class="accent">Centro Comercial Isabel Aguiar</p>
+                                <span class="">
+                                    <span style="padding-left: 6px">Ave. Isabel Aguiar, Esq. Ave. Las Palmas,</br></span>
+                                    <span style="padding-left: 6px">Edif. B-2, Local B-3, 3er nivel,</br></span>
+                                    <span style="padding-left: 6px">Herrera, Santo Domingo Oeste</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-container">
+                            <div class="flex-item-icon">
+                                <i class="fa fa-phone-square"></i>
+                            </div>
+                            <div class="">
+                                <span class="text-left">(809)560-3191</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-container">
+                            <div class="flex-item-icon">
+                                <i class="fa fa-envelope-square"></i>
+                            </div>
+                            <div>
+                                <span>info@cdd.org.do</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 footer-section">
+                <h5>nosotros</h5>
+                <ul>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Buzón de sugerencias</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <a class="twitter-timeline" data-lang="es" data-width="400" data-height="300" href="https://twitter.com/CDD_RD">Tweets by CDD_RD</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <div class="row highlights">
-        <div class="col-md-7 push-md-5 text-center">
-            <h2 class="highlights-heading">Taller de educación financiera para <span class="text-muted">Microempresarios.</span>
-            </h2>
-            <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium aliquet varius. Quisque pretium,
-                erat tincidunt semper pharetra, est massa fringilla turpis, sit amet eleifend nisl erat sodales
-                nunc.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Saber más...</a></p>
-        </div>
-        <div class="col-md-5 pull-md-7">
-            <img class="img-fluid mx-auto" src="img/talleres_img.jpg"
-                 alt="Taller de educacion financiera">
-        </div>
-    </div>
-
-    <hr class="section-divider">
-
-    <div class="row">
-    <!-- FOOTER -->
-    <footer class="col-lg-12 footer">
-        <div class="address col-sm-12">
-            <h3>DIRECCION</h3>
-            <p><span class="accent">Centro Comercial Isabel Aguiar</span><br>
-                Ave. Isabel Aguiar, Edif. B-2, Local B-3, 3er Nivel<br>
-                Herrera, Santo Domingo Oeste<br>
-                República Dominicana<br>
-                Telefono: <span class="phone">+1(809)560-3191, ext.: 29</span><br>
-                Email: <span class="email">info@cdd.org.do</span></p>
-        </div>
+        <hr>
         <div class="social-banner-group">
             <a href="#">
-                <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                <i class="fa fa-google-plus-square"></i>
             </a>
             <a href="#">
-                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square"></i>
             </a>
             <a href="#">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official"></i>
             </a>
             <a href="#">
-                <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square"></i>
             </a>
         </div>
         <div class="col-lg-12">
             <p class="text-center"><a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
         </div>
         <div class="col-lg-12">
-            <p class="text-center">&copy; 2017 Centro Dominicano de Desarrollo, Inc.</p>
+            <p class="cdd-copyright text-center">&copy; 2017 Centro Dominicano de Desarrollo, Inc.</p>
         </div>
-    </footer>
     </div>
-</div>
-
+</footer>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
@@ -268,6 +338,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/slick/slick.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -398,13 +398,13 @@ blockquote {
 }
 
 a {
-  color: #0275d8;
+  color: #044C34;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #014c8c;
-  text-decoration: underline;
+  color: #CBA521;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {
@@ -7377,7 +7377,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 
 .fixed-top {
   position: fixed;
-  top: 0;
+  top: 0px;
   right: 0;
   left: 0;
   z-index: 1030;
