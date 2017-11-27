@@ -118,7 +118,7 @@ ul {
     color: #ffffff;
 }
 .slide-main {
-    top: 100px;
+    top: 200px;
 }
 .slide-second {
     left: 5%;
@@ -188,8 +188,10 @@ ul.slick-slider li {
     margin-left: 0.3rem;
     float: right;
 }
+.main-menu {
+
+}
 .main-menu li:hover {
-    background-color: #efeff0;
 
 }
 .main-menu a {
@@ -198,15 +200,14 @@ ul.slick-slider li {
 }
 .main-menu__submenu-content {
     padding: 0;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
     list-style: none;
-    background-color: #efeff0;
+    background-color: #faf2cd;
     position: absolute;
     display: none;
     z-index: 100;
 }
 .main-menu__submenu-content li:hover {
-    background-color: #cccccc;
+    background-color: #EBE2BF;
 }
 
 .main-menu__submenu-content a {
@@ -496,7 +497,9 @@ height: 50px;
         padding: 0;
     }
 }
-
+.gallery-item {
+    margin-bottom: 35px;
+}
 .box-responsabilidad img{
     object-fit: cover;
     width: 350px;
