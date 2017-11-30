@@ -1,6 +1,6 @@
 /*****************************
 * Author    : Aneudy Mota
-* Version   : 1.0
+* Version   : 1.1
 ******************************/
 
 /**** Table of Contents *******
@@ -34,7 +34,6 @@ body {
     font-size: 1rem;
     color: #464646;
     margin-top: 98px;
-    /*background-color: #f2dca9;*/
     background: #faf2cd;
     overflow-x: hidden !important; }
 
@@ -179,20 +178,13 @@ ul.slick-slider li {
 .section {
     width: 100%;
     overflow: hidden;
-    padding-bottom: 0px;
-
+  padding-bottom: 0;
 }
 /*** NAVIGATION MENU ***/
 .fa-chevron-circle-down {
     margin-top: 0.1rem;
     margin-left: 0.3rem;
     float: right;
-}
-.main-menu {
-
-}
-.main-menu li:hover {
-
 }
 .main-menu a {
     font-weight: bold;
@@ -647,9 +639,9 @@ height: 50px;
     height: 100%;
 }
 .highlights-box-shadow {
-    -webkit-box-shadow: 0px 8px 16px -5px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 8px 16px -5px rgba(0,0,0,0.4);
-    box-shadow: 0px 8px 16px -5px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 8px 16px -5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 8px 16px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 16px -5px rgba(0, 0, 0, 0.4);
     background-color: #cc8b00;
 }
 
