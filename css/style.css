@@ -323,7 +323,9 @@ ul.slick-slider li {
     margin-bottom: 10px;
 }
 
-
+.highlights-box-shadow {
+    border: none;
+}
 
 .social-banner-group {
     width: 100%;
@@ -499,6 +501,11 @@ height: 50px;
 }
 .gallery-item {
     margin-bottom: 35px;
+}
+.gallery-img {
+    object-fit: cover;
+    height: 200px;
+    width: 250px;
 }
 .box-responsabilidad img{
     object-fit: cover;
