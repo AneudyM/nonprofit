@@ -1,13 +1,13 @@
 /*****************************
 * Author    : Aneudy Mota
-* Version   : 1.1
+* Version   : 0.0.2
 ******************************/
 
 /**** Table of Contents *******
 1. Typography
 2. Body
-2. Section Headings
-3. Section Carousel
+2. Section Header
+3. Section Slider
 4. Section Bubbles
 5. Section Highlights
 6. Section Footer
@@ -18,7 +18,7 @@
 6. Inner Page Consejo de Directores y Staff Gerencial
 7. Inner Page Memorias anuales
 8. Inner Page Relaciones
-9.  Reconocimientos
+9. Inner Page Reconocimientos
 10. Inner Page Trabaja con Nosotros
 11. Inner Page Contacto
 14. Inner Page Relaciones
@@ -63,6 +63,9 @@ ul {
 .text-highlight {
     color: #CBA521 !important;
 }
+/*
+2. Body
+ */
 /*** PREMIOS ***/
 .citi-winner-item {
     height: 300px;
