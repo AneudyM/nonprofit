@@ -66,6 +66,10 @@ ul {
 /*
 2. Body
  */
+iframe {
+    width: 400px;
+    height: 300px;
+}
 /*** PREMIOS ***/
 .citi-winner-item {
     height: 300px;
@@ -339,6 +343,30 @@ ul.slick-slider li {
     margin-bottom: 10px;
 }
 
+.not-found {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.not-found_title {
+    display: block;
+    margin: 0;
+
+}
+
+.not-found_img {
+    width: 125px;
+    margin-bottom: 20px;
+}
+.fb-page {
+    margin-right: 30px;
+}
+
 .social-banner-group i {
     margin-left: 10px;
     margin-right: 10px;
@@ -588,6 +616,7 @@ height: 50px;
 }
 .footer-section {
     margin-bottom: 30px;
+    width: 100px;
 }
 .footer-section h5 {
     font-weight: 900;
@@ -600,6 +629,9 @@ height: 50px;
 }
 .footer p {
     margin-bottom: 0;
+}
+.fb-like_section {
+    margin-bottom: 15px;
 }
 .flex-container {
     display: inline-flex;

@@ -6,3 +6,4 @@
  * Time: 6:28 PM
  */
 
+print "Hello, world!";
