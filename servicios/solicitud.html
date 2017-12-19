@@ -129,40 +129,40 @@
             <p>Todos los campos marcados con un asterisco (*) son obligatorios.</p>
             <form class="cdd-form align-content-center">
                 <div class="form-group row">
-                    <label for="nombre-input" class="col-2 col-form-label">Nombre*:</label>
+                    <label for="firstname-input" class="col-2 col-form-label">Nombre*:</label>
                     <div class="col-6">
-                        <input class="form-control" placeholder="Nombre*" id="nombre-input">
+                        <input type="text" name="first_name" class="form-control" placeholder="Nombre*" id="firstname-input">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="apellido-input" class="col-2 col-form-label">Apellido*:</label>
+                    <label for="lastname-input" class="col-2 col-form-label">Apellido*:</label>
                     <div class="col-6">
-                        <input class="form-control" placeholder="Apellido*" id="apellido-input">
+                        <input type="text" name="last_name" class="form-control" placeholder="Apellido*" id="lastname-input">
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="tel-input" class="col-2 col-form-label">Telefono/Movil*:</label>
+                    <label for="phone-input" class="col-2 col-form-label">Telefono/Movil*:</label>
                     <div class="col-6">
-                        <input class="form-control" type="tel" placeholder="809-555-5555" id="tel-input">
+                        <input type="tel" name="phone" class="form-control" placeholder="809-555-5555" id="phone-input">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="email-input" class="col-2 col-form-label">Email:</label>
                     <div class="col-6">
-                        <input class="form-control" type="email" placeholder="micorreo@email.com" id="email-input">
+                        <input type="email" name="email" class="form-control"  placeholder="micorreo@email.com" id="email-input">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="direccion-input" class="col-2 col-form-label">Dirección*:</label>
+                    <label for="address-input" class="col-2 col-form-label">Dirección*:</label>
                     <div class="col-6">
-                        <input class="form-control" placeholder="Calle, Casa/Apt No." id="direccion-input">
+                        <input type="text" name="address" class="form-control" placeholder="Calle, Casa/Apt No." id="address-input">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="sector-input" class="col-2 col-form-label">Sector*:</label>
                     <div class="col-6">
-                        <select class="form-control" id="sector-input">
+                        <select name="sector" class="form-control" id="sector-input">
                             <option>Los Mina</option>
                         </select>
                     </div>
@@ -170,9 +170,11 @@
                 <div class="form-group row">
                     <label for="provincia-input" class="col-2 col-form-label">Provincia*:</label>
                     <div class="col-6">
-                        <select class="form-control" id="provincia-input">
-                            <option>Santo Domingo</option>
-                        </select>
+                        <input list="provincia" name="provincia" id="provincia-input">
+                        <datalist id="provincia">
+                            <option value="Samaná"></option>
+                        </datalist>
+                        
                     </div>
                 </div>
                 <div class="form-group row">
