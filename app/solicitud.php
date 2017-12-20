@@ -86,7 +86,7 @@ $email->To("aneudy.catalino@gmail.com");
 $email->Message($message);
 $email->Subject("[Prueba] Solicitud de Prestamo");
 
-mail($email->GetReceiver(), $email->GetSubject(), implode("\r\n", $email->GetMessage()), implode("\r\n", $email->GeHeaders()));
+mail($email->GetReceiver(), $email->GetSubject(), implode("\r\n", $email->GetMessage()), implode("\r\n", $email->GetHeaders()));
 
 
 
