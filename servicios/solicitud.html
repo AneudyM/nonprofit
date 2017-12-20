@@ -127,7 +127,7 @@
     <div class="row">
         <div class="col-lg-12">
             <p>Todos los campos marcados con un asterisco (*) son obligatorios.</p>
-            <form class="cdd-form align-content-center">
+            <form class="cdd-form align-content-center" action="../app/solicitud.php" method="post">
                 <div class="form-group row">
                     <label for="firstname-input" class="col-2 col-form-label">Nombre*:</label>
                     <div class="col-6">
@@ -170,17 +170,47 @@
                 <div class="form-group row">
                     <label for="provincia-input" class="col-2 col-form-label">Provincia*:</label>
                     <div class="col-6">
-                        <input list="provincia" name="provincia" id="provincia-input">
+                        <input list="provincia" name="province" id="provincia-input">
                         <datalist id="provincia">
-                            <option value="Samaná"></option>
+                            <option value="Santo Domingo"></option>
+                            <option value="Distrito Nacional"></option>
+                            <option value="Santiago"></option>
+                            <option value="San Crist&oacute;bal"></option>
+                            <option value="La Vega"></option>
+                            <option value="Puerto Plata"></option>
+                            <option value="San Pedro de Macor&iacute;s"></option>
+                            <option value="Duarte"></option>
+                            <option value="La Altagracia"></option>
+                            <option value="La Romana"></option>
+                            <option value="San Juan"></option>
+                            <option value="Espaillat"></option>
+                            <option value="Azua"></option>
+                            <option value="Barahona"></option>
+                            <option value="Monte Plata"></option>
+                            <option value="Peravia"></option>
+                            <option value="Monse&ntilde;or Nouel"></option>
+                            <option value="Valverde"></option>
+                            <option value="S&aacute;nchez Ram&iacute;rez"></option>
+                            <option value="Mar&iacute;a Trinidad S&aacute;nchez"></option>
+                            <option value="Montecristi"></option>
+                            <option value="Saman&aacute;"></option>
+                            <option value="Bahoruco"></option>
+                            <option value="Hermanas Mirabal"></option>
+                            <option value="El Seibo"></option>
+                            <option value="Hato Mayor"></option>
+                            <option value="Dajab&oacuten"></option>
+                            <option value="El&iacute;as Pi&ntilde;a"></option>
+                            <option value="San Jos&eacute; de Ocoa"></option>
+                            <option value="Santiago Rodr&iacute;guez"></option>
+                            <option value="Independencia"></option>
+                            <option value="Pedernales"></option>
                         </datalist>
-                        
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="pais-input" class="col-2 col-form-label">País*:</label>
+                    <label for="country-input" class="col-2 col-form-label">País*:</label>
                     <div class="col-6">
-                        <select class="form-control" id="pais-input">
+                        <select name="country" class="form-control" id="country-input">
                             <option>República Dominicana</option>
                         </select>
                     </div>

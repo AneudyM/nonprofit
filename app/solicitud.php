@@ -12,16 +12,21 @@ spl_autoload_register(
   }
 );
 
+$email = new Email();
 $request = new LoanRequest();
-$request->setFirstName("Aneudy");
-$request->setLastName("Mota");
-$request->setAddress("100 Western Ave.");
-$request->setCountry("United States");
-$request->setEmail("aneudy.catalino@gmail.com");
-$request->setPhone("269-350-4104");
-$request->setProvince("Kalamazoo");
-$request->setSector("Kalamazoo");
+$sender = 'info@intelycs.com';
 
+$request->setFirstName($_POST['first_name']);
+$request->setLastName($_POST['last_name']);
+$request->setAddress($_POST['address']);
+$request->setCountry($_POST['country']);
+$request->setEmail($_POST['email']);
+$request->setPhone($_POST['phone']);
+$request->setProvince($_POST['province']);
+$request->setSector($_POST['sector']);
+
+
+/** Construct the Email report */
 $message[] = '<html><body style="font-size: 16px">';
 $message[] = '<img style="width: 400px;" src="http://cdd.org.do/img/branding/centered_logo.png" alt="Centro Dominicano de Desarrollo, Inc." />';
 $message[] = '<hr>';
@@ -36,7 +41,7 @@ $message[] = '</tr>';
 
 // Phone field
 $message[] = '<tr>';
-$message[] = '<th align="right">Telefono:</th>';
+$message[] = '<th align="right">Tel&eacute;fono:</th>';
 $message[] = '<td>'.$request->Phone().'</td>';
 $message[] = '</tr>';
 
@@ -48,7 +53,7 @@ $message[] = '</tr>';
 
 // Address field
 $message[] = '<tr>';
-$message[] = '<th align="right">Dirección:</th>';
+$message[] = '<th align="right">Direcci&oacute;n:</th>';
 $message[] = '<td>'.$request->Address().'</td>';
 $message[] = '</tr>';
 
@@ -66,7 +71,7 @@ $message[] = '</th>';
 
 // Country field
 $message[] = '<tr>';
-$message[] = '<th align="right">País:</th>';
+$message[] = '<th align="right">Pa&iacute;s:</th>';
 $message[] = '<td>'.$request->Country().'</td>';
 $message[] = '</tr>';
 
@@ -74,10 +79,14 @@ $message[] = '</body></html>';
 
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+$headers[] = 'From: '.$sender.'';
 
-print implode("\r\n", $headers);
+$email->Headers($headers);
+$email->To("aneudy.catalino@gmail.com");
+$email->Message($message);
+$email->Subject("[Prueba] Solicitud de Prestamo");
 
-mail('aneudy.catalino@gmail.com', 'Solicitud de Prestamo', implode("\r\n", $message), implode("\r\n", $headers));
+mail($email->GetReceiver(), $email->GetSubject(), implode("\r\n", $email->GetMessage()), implode("\r\n", $email->GeHeaders()));
 
 
 
