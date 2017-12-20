@@ -8,21 +8,12 @@
 
 class Email {
   private $receiver;
-  private $sender;
   private $subject;
   private $message;
   private $headers;
 
   public function To($email) {
     $this->receiver = $email;
-  }
-
-  public function Sender($email) {
-    $this->sender = $email;
-  }
-
-  public function GetSender() {
-    return $this->sender;
   }
 
   public function GetReceiver() {
