@@ -126,7 +126,7 @@ spl_autoload_register(
             <a href="galeria.html">Galería</a>
           </li>
           <li>
-            <a href="sugerencias.html">Sugerencias</a>
+            <a href="suggestion.php">Sugerencias</a>
           </li>
         </ul>
       </li>
@@ -278,7 +278,7 @@ _HTML_;
         <h5>nosotros</h5>
         <ul>
           <li><a href="trabajos.html">Trabaja con nosotros</a></li>
-          <li><a href="sugerencias.html">Buzón de sugerencias</a></li>
+          <li><a href="suggestion.php">Buzón de sugerencias</a></li>
         </ul>
       </div>
 
