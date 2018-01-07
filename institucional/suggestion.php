@@ -91,7 +91,7 @@ spl_autoload_register(
             <a href="../servicios/microcreditos.html">Microcréditos</a>
           </li>
           <li>
-            <a href="../servicios/solicitud.html">Solicitud de
+            <a href="../servicios/solicitud.php">Solicitud de
               crédito</a>
           </li>
         </ul>
@@ -149,8 +149,7 @@ spl_autoload_register(
   <div class="row">
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-      $to = "aneudy.catalino@gmail.com";
+        $to = "aneudy.catalino@gmail.com, servidor32@gmail.com";
       $sender = "info@intleycs.com";
       $subject = "[Prueba] Nueva Sugerencia.";
       $suggestion = new Suggestion();
@@ -161,7 +160,7 @@ spl_autoload_register(
 
       /** Create Email Headers */
       $headers[] = 'MIME-Version: 1.0';
-      $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+      $headers[] = 'Content-type: text/html; charset=utf-8';
       $headers[] = 'From: ' . $sender . '';
 
       /** Create Suggestion HTML Email message */

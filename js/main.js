@@ -8,4 +8,5 @@ $('.slick-slider').slick({
     infinity: true,
     speed: 250,
     arrows: false
-  });
+});
+
