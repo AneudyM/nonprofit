@@ -694,8 +694,18 @@ height: 50px;
 .accent {
     color: #044C34;
     font-weight: bold;
+    padding-left: 6px
 }
-
+.form-success {
+  height: 350px;
+  text-align: center;
+  margin: auto;
+}
+.form-success > img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 125px;
+}
 .email {
     color: #044C34;
     font-weight: bold;
