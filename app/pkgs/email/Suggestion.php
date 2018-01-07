@@ -17,7 +17,7 @@ class Suggestion {
     $this->area = $area;
   }
 
-  public function setSuggestion($suggestion) {
+  public function setSuggestionMsg($suggestion) {
     $this->suggestion = $suggestion;
   }
 

@@ -16,7 +16,7 @@ class LoanRequest {
   private $phone;
   private $email;
   private $address;
-  private $sector;
+  private $municipality;
   private $province;
   private $country;
 
@@ -41,8 +41,8 @@ class LoanRequest {
     $this->address = $address;
   }
 
-  public function setSector($sector) {
-    $this->sector = $sector;
+  public function setMunicipality($municipality) {
+    $this->municipality = $municipality;
   }
 
   public function setProvince($province) {
@@ -75,8 +75,8 @@ class LoanRequest {
     return $this->address;
   }
 
-  public function Sector() {
-    return $this->sector;
+  public function Municipality() {
+    return $this->municipality;
   }
 
   public function Province() {

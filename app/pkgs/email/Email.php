@@ -40,7 +40,7 @@ class Email {
     $this->headers = $headers;
   }
 
-  public function GeHeaders() {
+  public function GetHeaders() {
     return $this->headers;
   }
 }
