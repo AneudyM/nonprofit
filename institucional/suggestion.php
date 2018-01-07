@@ -149,9 +149,9 @@ spl_autoload_register(
   <div class="row">
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $to = "aneudy.catalino@gmail.com, servidor32@gmail.com";
-      $sender = "info@intleycs.com";
-      $subject = "[Prueba] Nueva Sugerencia.";
+        $to = "auditoriainterna@cdd.org.do, f.ramirez@cdd.org.do";
+      $sender = "info@cdd.org.do";
+      $subject = "Nueva Sugerencia.";
       $suggestion = new Suggestion();
       $email = new Email();
 
@@ -191,7 +191,7 @@ spl_autoload_register(
       print<<<_HTML_
                 <div class="form-success text-center">
                     <img src="../img/checked.svg" alt="Checked" />
-                    <h1>Thank you for your submission</h1>
+                    <h1>¡Gracias por su opinión!</h1>
                 </div>
 _HTML_;
     }

@@ -148,7 +148,7 @@ $provinces = $mysqli->query($qryProvinces, MYSQLI_STORE_RESULT);
 
                       $email = new Email();
                       $request = new LoanRequest();
-                      $to = "uditoriainterna@cdd.org.do, f.ramirez@cdd.org.do";
+                      $to = "auditoriainterna@cdd.org.do, f.ramirez@cdd.org.do";
                       $sender = 'info@cdd.org.do';
 
                       $request->setFirstName($_POST['first_name']);
@@ -219,7 +219,7 @@ $provinces = $mysqli->query($qryProvinces, MYSQLI_STORE_RESULT);
                       $email->Headers($headers);
                       $email->To($to);
                       $email->Message($message);
-                      $email->Subject("[Prueba] Solicitud de Prestamo");
+                      $email->Subject("Nueva solicitud de prestamo");
 
                       mail($email->GetReceiver(), $email->GetSubject(), implode("\r\n", $email->GetMessage()), implode("\r\n", $email->GetHeaders()));
                         echo '<div class="form-success text-center">';
@@ -273,7 +273,7 @@ _HTML_;
                                             <select required name="province" class="form-control" id="province-input">
 _HTML_;
 
-                      echo '                    <option disabled selected value="default">Seleccione una provincia</option>';
+                      echo '                    <option disabled selected value="default">Seleccionar provincia</option>';
                       while (list($province) = $provinces->fetch_row()) {
                           echo '                <option>'.utf8_encode($province).'</option>';
                       }
@@ -288,7 +288,7 @@ _HTML_;
                                          <div class="col-6">
                                              <select name="municipality" class="form-control" id="municipality-input">
 _HTML_;
-                      echo   '                   <option disabled selected value="default">Seleccione un municipio</option>';
+                      echo   '                   <option disabled selected value="default">Seleccionar municipio</option>';
 
                       print<<<_HTML_
                                              </select>
